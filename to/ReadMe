@@ -1,0 +1,32 @@
+How to use, put all files under you home dir.
+File .hosts contains all hosts you want to login, its format is defined in itself.
+for example:
+
+135.242.137.100 qdbuild oliverz register123
+123.242.137.120 qdhssbuild oliverz oliverz
+
+if you want to login server 123.242.137.120, you can run
+
+oliverz@registerbuildserver(~)$ to -a 120
+1,      135.242.137.120 qdhssbuild
+spawn ssh oliverz@135.242.137.120
+The authenticity of host '135.242.137.120 (135.242.137.120)' can't be established.
+ECDSA key fingerprint is 68:a5:80:2f:49:42:23:aa:5b:b0:74:4d:6c:7b:78:7e.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added '135.242.137.120' (ECDSA) to the list of known hosts.
+oliverz@135.242.137.120's password:
+Last login: Thu Sep 20 22:34:12 2018 from 172.24.163.174
+
+[Info]  Git config file '~/.gitconfig' generated ...
+[Info]  User name & email added in '~/.gitconfig'
+[Info]  Git basic CONFIGURATION values:
+        user.name=oliver.zhang & user.email=oliver.zhang@nokia-sbell.com
+[Warn]  NFS Work directory '/registers_hss/work/oliverz' does not exist. Please contact CM Team (cm-admin@mlist.nsn-inter.net) ...
+
+[Info]  All needed 'tools' REPO are available here: "/imsgit/Tools"
+        <<== Please create a link from your Work Copy to this location as needed ==>>
+
+....{checking open reviews}....
+oliverz@hssBuildServer(~)$
+
+If you run "to 120", you have to enter password by yourself

@@ -1,0 +1,71 @@
+    # a record with addr only
+    gdcsr60.gdc.lucent.com
+    # a record with ip, nick name, login
+    135.252.41.248 qdbuild2 lungangfang
+    # a record with ip, nick name, login and passwd
+    135.252.135.68 qdi02-c04 root newsys
+    # a record which will run a command after login
+    135.252.152.115 loads public public send \r; send "cd /home/toaster/LCP \r"
+    # login to a sever via an intermediate host, like 'ssh -t middle ssh dest'
+    152.148.163.134 wf03-c01 root telica send \r; send "ssh 152.148.184.200\r"
+
+# Modified: Kevin Zhang 04/28/2018 20:51>
+
+135.252.41.247 qdbuild1 kzhan002
+#Build server
+135.242.137.100 qdbuild oliverz register123
+135.242.137.120 qdhssbuild oliverz oliverz
+135.242.137.125 qdhlrbuild oliverz oliverz
+hzlinv500.china.nsn-net.net hzserver oliverz Tian160925,
+hzlinv501.china.nsn-net.net  hzserver oliverz Tian160925,
+
+#BM Lab begin
+
+#prowess lab begin
+10.67.27.52 InstallServer
+10.67.27.53 Tiams1
+10.67.27.54 Tiams2
+10.67.27.55 Tiamsfloating
+10.67.27.56 vhss1
+10.67.27.59 hlr01
+#prowess lab end
+
+#BM Lab end
+
+
+
+#VNF Lab begin
+
+#CMRepo begin
+10.110.26.29 cCMREPO06-01 
+10.110.26.30 cCMREPO06-02
+10.110.26.31 cCMREPO06-floating
+#CMRepo end
+
+#chlr16 begin
+10.110.26.91 cHLR16OAM1 root yt_xk39b
+10.110.26.92 cHLR16OAM2
+10.110.26.93 cHLR16OAM3
+10.110.26.94 cHLR16OAMfloating
+10.110.26.94 cHLR16CallP1 root yt_xk39b send \r; send "ssh 10.110.26.95\r"
+10.110.26.94 cHLR16CallP2 root yt_xk39b send \r; send "ssh 10.110.26.96\r"
+10.110.26.94 cHLR16ALB1	  root yt_xk39b send \r; send "ssh 10.110.26.87\r"
+10.110.26.94 cHLR16ALB2   root yt_xk39b send \r; send "ssh 10.110.26.88\r"
+10.110.26.94 cHLR16SLB1   root yt_xk39b send \r; send "ssh 10.110.26.89\r"
+10.110.26.94 cHLR16SLB2   root yt_xk39b send \r; send "ssh 10.110.26.90\r"
+#chlr16 end
+
+#chss15 begin
+10.110.25.139 cHSS15OAM1
+10.110.25.140 cHSS15OAM2
+10.110.25.141 cHSS15OAM3
+10.110.25.142 cHSS15OAMfloating
+10.110.25.142 cHSS15ALB1  root yt_xk39b  send \r; send "ssh 10.110.25.134\r"
+10.110.25.142 cHSS15ALB2  root yt_xk39b  send \r; send "ssh 10.110.25.135\r"
+10.110.25.142 cHSS15DLB1  root yt_xk39b  send \r; send "ssh 10.110.25.136\r"
+10.110.25.142 cHSS15DLB2  root yt_xk39b  send \r; send "ssh 10.110.25.138\r"
+10.110.25.142 cHSS15CallP1  root yt_xk39b  send \r; send "ssh 10.110.25.153\r"
+10.110.25.142 cHSS15Callp2  root yt_xk39b  send \r; send "ssh 10.110.25.154\r"
+#chss15 end
+
+#VNF Labe end
