@@ -1,0 +1,1 @@
+batch replace in batch files: grep -r cmreader-service * | awk -F : '{print $1}' | sort | uniq | xargs sed -i 's/cmreader-service/cmreader-service1/g'
